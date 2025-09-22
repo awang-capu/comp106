@@ -5,7 +5,7 @@ int main() {
     
     // Print the current value of 'energy_indicator'
     // %d is a placeholder for an integer, which is replaced by the value of 'energy_indicator'
-    printf("My energy was %d in the morning.\n", energy_indicator);
+    printf("Hello, World!\nMy energy is %d in the morning.\n", energy_indicator);
 
     // Print the new value of 'energy_indicator'
     energy_indicator = 50; // Change the value of 'energy_indicator' to 50

@@ -6,8 +6,8 @@ void setup() {
 }
 
 void loop() {
-    printf("Sparki is turning right.\n");
-    printf("Sparki is moving forward one meter.\n");
+    printf("Sparki is turning right 90 degrees.\n");
+    printf("Sparki is moving forward 20 cm.\n");
 }
 
 int main() {

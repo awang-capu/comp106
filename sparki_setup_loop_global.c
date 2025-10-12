@@ -14,8 +14,8 @@ void loop() {
     if (count < 4) {
         printf("Loop iteration %d\n", count);
         count++;
-        printf("Sparki is turning right.\n");
-        printf("Sparki is moving forward one meter.\n");
+        printf("Sparki is moving forward 20cm.\n");
+        printf("Sparki is turning right 90 degrees.\n");
     } else {
         exit(0); // Stop loop() being called by exiting the program
     }

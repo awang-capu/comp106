@@ -10,7 +10,7 @@ int sum_range(int small_number, int large_number) {
 
 int main() {
 
-    printf("The sum from 1 to 100 is: %d.\n", sum_range(1, 100));
+    printf("The sum of integers from 1 to 100 is: %d.\n", sum_range(1, 100));
 
     return 0;
 }

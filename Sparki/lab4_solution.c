@@ -8,9 +8,9 @@ void setup() {}
 
 void loop() {
     sparki.RGB(RGB_GREEN); // Turn the light green
+    
     int edge_left   = sparki.edgeLeft();   // Measure the left edge IR sensor
     int edge_right  = sparki.edgeRight();  // Measure the right edge IR sensor
-    
     if (edge_left < THRESHOLD) { // If no surface underneath left sensor
         sparki.moveBackward(BACKWARD_DISTANCE);
         sparki.moveRight(ANGLE); 

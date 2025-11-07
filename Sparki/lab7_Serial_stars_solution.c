@@ -38,7 +38,7 @@ void printIsoscelesTriangle(int rows) {
 }
 
 void loop() {
-    if (Serial.available()) {
+    if (Serial.available() > 0) {
         int num_rows = Serial.parseInt();
         Serial.print("Number of rows you entered: ");
         Serial.println(num_rows);

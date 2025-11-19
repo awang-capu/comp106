@@ -35,7 +35,7 @@ void lineFollowing() {
 void detectAndGrabObject() {
   int ping_distance = sparki.ping();
   if (ping_distance < DETECTION_DISTANCE_CM && ping_distance != -1) {
-    sparki.moveStop(); // Is one ping check accurate enough?
+    sparki.moveStop(); 
     sparki.moveForward(DETECTION_DISTANCE_CM - 2);// Make sure closer to the object.
     sparki.moveStop();
 
@@ -51,7 +51,7 @@ void detectAndGrabObject() {
 
 void putDownObject() {
     sparki.moveForward(UNLOADING_DISTANCE_CM);
-    delay(60000); // Delete this line, and add several lines of code to complete this function
+    delay(30000); // Delete this line, and complete this function.
 
     object_moving = false;
     reach_start = false;

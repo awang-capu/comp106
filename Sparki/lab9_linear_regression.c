@@ -1,7 +1,8 @@
 #include <Sparki.h>
 
-float a = -0.1875;
-float b = 2.0;
+// Linear regression parameters
+float a = -0.1504; // Slope
+float b = 1.579;   // Intercept (threshold at ~10.5 cm)
 
 float linearRegression() {
     int x = sparki.ping(); 
@@ -12,7 +13,6 @@ void setup() {}
 
 void loop() {
     float y = linearRegression();
-
     if (y >= 0) {
         sparki.RGB(RGB_RED);    // Object close (ping() ≤ 10 cm)
     } else {
